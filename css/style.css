@@ -117,7 +117,7 @@ ul {
 }
 
 .image-wrapper {
-  background: url("../../assets/header-image.JPG") center no-repeat;
+  background: url("../../assets/header-image.jpg") center no-repeat;
   -o-object-fit: contain;
      object-fit: contain;
   position: relative;
