@@ -1,0 +1,133 @@
+.footer {
+  background: url("../../assets/white-concrete-wall.jpg");
+  svg {
+    width: rem(24);
+    height: rem(24);
+  }
+
+  &__info {
+    padding: rem(80);
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  &__column {
+    &:nth-of-type(1) {
+      align-self: center;
+    }
+
+    &-item + &-item {
+      margin-top: rem(45);
+    }
+    &-item {
+      display: flex;
+      flex-direction: column;
+      h3 {
+        font-size: em(22);
+        color: #dbdbdb;
+        text-transform: uppercase;
+        font-weight: 600;
+        font-style: normal;
+        margin-bottom: rem(15);
+      }
+      p {
+        color: #aaaaaa;
+        font-size: em(16);
+        font-weight: 300;
+        font-style: normal;
+      }
+      p + p {
+        margin-top: rem(8);
+      }
+      a {
+        color: #aaaaaa;
+        font-size: em(16);
+        font-weight: 300;
+        font-style: normal;
+      }
+      a + a {
+        margin-top: rem(8);
+      }
+
+      &-row + &-row {
+        margin-top: rem(9);
+      }
+
+      &-row {
+        display: flex;
+        align-items: center;
+
+        svg {
+          fill: #aaaaaa;
+          margin-right: rem(8);
+        }
+      }
+    }
+  }
+}
+
+.footer__direitos {
+    border-top: 1px solid rgba($color: #707070, $alpha: .2);
+    text-align: center;
+    padding: rem(12);
+  p {
+    color: #d2d2d2 !important;
+    font-style: italic;
+  }
+
+  p+p{
+      margin-top: rem(5);
+  }
+
+  a{
+      color: #FFEE00;
+      font-weight: bold;
+      font-style: normal;
+  }
+}
+
+.redes {
+  a {
+    width: rem(40);
+    height: rem(40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid currentColor;
+    border-radius: 50%;
+  }
+
+  .trip {
+    color: #f5b955;
+    svg {
+      fill: #f5b955;
+    }
+  }
+  .instagram {
+    color: #5f0479;
+    svg {
+      fill: #5f0479;
+    }
+  }
+  .whatsapp {
+    color: #4caf50;
+    svg {
+      fill: #4caf50;
+    }
+  }
+  .facebook {
+    color: #1b0264;
+    svg {
+      fill: #1b0264;
+    }
+  }
+
+  svg {
+    margin-left: rem(8);
+  }
+
+  a + a {
+    margin: 0;
+    margin-left: rem(15);
+  }
+}

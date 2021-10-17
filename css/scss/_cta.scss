@@ -1,0 +1,49 @@
+.image-wrapper-cta {
+  background: url("../../assets/pexels-vlad-bagacian-1061623.jpg");
+  object-fit: contain;
+  position: relative;
+  z-index: 1;
+  padding: rem(125) 0;
+}
+
+.cta {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &-item + &-item {
+    margin-left: rem(200);
+  }
+
+  &-item {
+    img {
+      box-shadow: 0px 0px 11px #00000029;
+      border: 10px solid #ffffff;
+    }
+
+    h2 {
+      font-size: em(36);
+      color: #333333;
+      font-style: italic;
+      font-weight: 600;
+      max-width: 18ch;
+      text-align: center;
+      margin: 0 auto;
+    }
+    p {
+      text-align: center;
+      color: #676767;
+      font-size: em(20);
+      font-weight: 300;
+      max-width: 45ch;
+      margin: rem(25) auto rem(36);
+    }
+
+    .cta__row {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+    }
+  }
+}

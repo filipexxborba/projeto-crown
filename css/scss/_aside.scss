@@ -1,0 +1,54 @@
+.aside {
+  position: fixed;
+  left: rem(30);
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 9999;
+  svg {
+    width: rem(24);
+    height: rem(24);
+  }
+
+  a {
+    width: rem(40);
+    height: rem(40);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+  }
+
+  .trip {
+    background: #f5b955;
+    svg {
+      fill: #fff;
+    }
+  }
+  .instagram {
+    background: linear-gradient(180deg, #FFC107 0%, #BF0505 48%, #5B0480 100%);
+
+    svg {
+      fill: #fff;
+    }
+  }
+  .whatsapp {
+    background: #4caf50;
+    svg {
+      fill: #fff;
+    }
+  }
+  .facebook {
+    background: #1b0264;
+    svg {
+      fill: #fff;
+    }
+  }
+
+  svg {
+    margin-left: rem(0);
+  }
+
+  a + a {
+    margin-top: rem(10);
+  }
+}

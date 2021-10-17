@@ -1,0 +1,36 @@
+.header__info {
+  background: #f3f3f3;
+  padding: rem(5);
+
+  &-wrapper{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  &-item{
+      img{
+          width: rem(27);
+          height: rem(18);
+          filter: grayscale(100%);
+      }
+      a{
+          font-weight: bold;
+      }
+      .flag + .flag{
+          margin-left: rem(15);
+      }
+
+      .active-flag{
+          img{
+            filter: grayscale(0%);
+          }
+      }
+      p{
+          font-size: em(14);
+          color: #707070;
+      }
+  }
+}
+
+

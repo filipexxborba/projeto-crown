@@ -1,0 +1,80 @@
+@function rem($size, $context: 16) {
+  @return $size / $context + rem;
+}
+
+@function em($size, $context: 16) {
+  @return $size / $context + em;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  max-width: rem(1700);
+  margin: 0 auto;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+ul{
+  list-style-type: none;
+}
+
+.button{
+  padding: rem(12) rem(18);
+  font-weight: 600;
+  font-size: em(18);
+  transition: all ease-in .1s;
+}
+
+.bw{
+  background-color: #00A3E2;
+  color: #fff;
+  border: 1px solid #00A3E2;
+
+  &:hover{
+    background: darken(#00A3E2, 5%);
+  }
+}
+
+.wb{
+  background: white;
+  color: #00A3E2;
+  border: 1px solid #00A3E2;
+
+  &:hover{
+    background: darken(white, 5%);
+  }
+}
+
+.button + .button{
+  margin-left: rem(10);
+}
+
+.titulo{
+  font-size: em(44) !important;
+  border-bottom: 1px solid currentColor !important;
+  color: #7AAF39 !important;
+  padding: rem(2) 0 !important;
+  background: white !important;
+}
+
+.g{
+  background: #7AAF39;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: em(16);
+  transition: .1s ease-in;
+
+  &:hover{
+    background: darken(#7AAF39, 10%);
+  }
+}

@@ -4,46 +4,54 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Recanto Cataratas | Thermas Resort & Convention</title>
+    <title>Recanto Cataratas - Thermas Resort & Convention</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <div class="container">
-      <div class="header__info">
-        <div class="header__info-item">
-          <p>
-            Faça sua reserva:
-            <a href="#" target="_blank">+55 (45) 2102 3033</a> |
-            <a href="#" target="_blank">0800 707 2400</a>
-          </p>
-        </div>
-        <div class="header__info-item">
-          <a href="#" target="_blank"
-            ><img
-              src="./assets/brazil-flag.png"
-              alt="Idioma Brasileiro, bandeira do Brasil."
-          /></a>
-          <a href="#" target="_blank"
-            ><img
-              src="./assets/united-states-of-america-flag.png"
-              alt="Idioma Inglês, bandeira dos Estados Unidos."
-          /></a>
-          <a href="#" target="_blank"
-            ><img
-              src="./assets/spain-flag.png"
-              alt="Idioma Espanhol, bandeira da Espanha."
-          /></a>
+    <div class="header__info">
+      <div class="container">
+        <div class="header__info-wrapper">
+          <div class="header__info-item">
+            <p>
+              Faça sua reserva:
+              <a href="#" target="_blank">+55 (45) 2102 3033</a> |
+              <a href="#" target="_blank">0800 707 2400</a>
+            </p>
+          </div>
+          <div class="header__info-item">
+            <a class="flag active-flag" href="#" target="_blank"
+              ><img
+                src="./assets/brazil-flag.png"
+                alt="Idioma Brasileiro, bandeira do Brasil."
+            /></a>
+            <a class="flag" href="#" target="_blank"
+              ><img
+                src="./assets/united-states-of-america-flag.png"
+                alt="Idioma Inglês, bandeira dos Estados Unidos."
+            /></a>
+            <a class="flag" href="#" target="_blank"
+              ><img
+                src="./assets/spain-flag.png"
+                alt="Idioma Espanhol, bandeira da Espanha."
+            /></a>
+          </div>
         </div>
       </div>
-      <!-- Fim header__info -->
     </div>
-    <!-- Fim container -->
 
     <div class="image-wrapper">
+      <div class="darken"></div>
       <div class="container">
         <header class="header">
           <nav class="header__nav">
             <ul class="header__ul">
-              <li class="header__ul-item">
+              <li class="header__ul-item active">
                 <a href="#" target="_blank">O Resort</a>
               </li>
               <li class="header__ul-item">
@@ -89,28 +97,32 @@
     </div>
     <!-- Fim image-wrapper -->
 
-    <div class="container">
-      <section class="cta">
-        <div class="cta-item">
-          <h2>Recanto Cataratas, seu resort completo!</h2>
-          <p>
-            Localizado em Foz do Iguaçu/Paraná, terra das Cataratas do Iguaçu,
-            eleita uma das 7 maravilhas da natureza, com incontáveis atrações
-            naturais que recebe e encanta visitantes do mundo inteiro.
-          </p>
-          <div class="cta__row">
-            <a class="button bw" href="#" target="_blank">Ver promoções</a>
-            <a class="button wb" href="#" target="_blank">Ler mais sobre nós</a>
+    <div class="image-wrapper-cta">
+      <div class="container">
+        <section class="cta">
+          <div class="cta-item">
+            <h2>Recanto Cataratas, seu resort completo!</h2>
+            <p>
+              Localizado em Foz do Iguaçu/Paraná, terra das Cataratas do Iguaçu,
+              eleita uma das 7 maravilhas da natureza, com incontáveis atrações
+              naturais que recebe e encanta visitantes do mundo inteiro.
+            </p>
+            <div class="cta__row">
+              <a class="button bw" href="#" target="_blank">Ver promoções</a>
+              <a class="button wb" href="#" target="_blank"
+                >Ler mais sobre nós</a
+              >
+            </div>
           </div>
-        </div>
-        <div class="cta-item">
-          <img
-            src="./assets/video.PNG"
-            alt="Video mostrando o Recanto Cataratas."
-          />
-        </div>
-      </section>
-      <!-- Fim CTA -->
+          <div class="cta-item">
+            <img
+              src="./assets/video.PNG"
+              alt="Video mostrando o Recanto Cataratas."
+            />
+          </div>
+        </section>
+        <!-- Fim CTA -->
+      </div>
     </div>
 
     <div class="container">
@@ -122,7 +134,7 @@
               src="./assets/arraia.PNG"
               alt="Arraiá no Recanto, foto mostrando 2 crianças vestidas à carater de arraiá."
             />
-            <h2>Arriá no recanto</h2>
+            <h2>Arraiá no recanto</h2>
             <p>
               Todo sábado, com quadrilha, decoração, jogos típicos, guloseimas e
               muito mais. Venha curtir com a gente!
@@ -217,7 +229,7 @@
               src="./assets/grupo.PNG"
               alt="Tarifas especiais para grupos, foto mostrando um grupo de pessoas felizes com as opções do Recanto."
             />
-            <h2>Fim de semana</h2>
+            <h2>Tarifa especiais para grupos</h2>
             <p>
               Reuna os amigos, temos benefícios e condições especiais para
               grupos, consulte.
@@ -231,77 +243,80 @@
     </div>
 
     <section class="newsletter">
+      <div class="darken-news"></div>
       <div class="container">
         <div class="newsletter__wrapper">
-          <div class="newsletter__wrapper__depo">
-            <div class="newsletter__wrapper__depo-item">
-              <img src="./assets/markup.png" alt="Imagem de aspas abertas" />
-              <p>
-                Passei o reillon no Recanto, atendimento muito bom, perfeito
-                para férias com a família. Ótima estrutura, pisicinas para todas
-                as idades, funcionários bem treinados e atenciosos. Comida muito
-                saborosa, apartamentos bem equipados. Voltarei sem dúvidas.
-              </p>
-              <img src="./assets/markup.png" alt="Imagem de aspas abertas" />
+          <div class="newsletter__depos">
+            <div class="newsletter__depos__items">
+              <div class="newsletter__depos__items-item active-depo">
+                <img src="./assets/markup.png" />
+                <p>
+                  Passei o reveillon no Recanto, atendimento muito bom, perfeito
+                  para férias com a família. Ótima estrutura, piscinas para
+                  todas as idades, funcionários bem treinados e atenciosos.
+                  Comida muito saborosa, apartamentos bem equipados. Voltarei
+                  sem duvidas.
+                </p>
+                <img src="./assets/markup.png" />
+              </div>
+              <!-- Fim item 1 -->
+              <div class="newsletter__depos__items-item">
+                <img src="./assets/markup.png" />
+                <p>
+                  Passei o reveillon no Recanto, atendimento muito bom, perfeito
+                  para férias com a família. Ótima estrutura, piscinas para
+                  todas as idades, funcionários bem treinados e atenciosos.
+                  Comida muito saborosa, apartamentos bem equipados. Voltarei
+                  sem duvidas.
+                </p>
+                <img src="./assets/markup.png" />
+              </div>
+              <!-- Fim item 2 -->
+              <div class="newsletter__depos__items-item">
+                <img src="./assets/markup.png" />
+                <p>
+                  Passei o reveillon no Recanto, atendimento muito bom, perfeito
+                  para férias com a família. Ótima estrutura, piscinas para
+                  todas as idades, funcionários bem treinados e atenciosos.
+                  Comida muito saborosa, apartamentos bem equipados. Voltarei
+                  sem duvidas.
+                </p>
+                <img src="./assets/markup.png" />
+              </div>
+              <!-- Fim item 3 -->
+              <div class="newsletter__depos__items-item">
+                <img src="./assets/markup.png" />
+                <p>
+                  Passei o reveillon no Recanto, atendimento muito bom, perfeito
+                  para férias com a família. Ótima estrutura, piscinas para
+                  todas as idades, funcionários bem treinados e atenciosos.
+                  Comida muito saborosa, apartamentos bem equipados. Voltarei
+                  sem duvidas.
+                </p>
+                <img src="./assets/markup.png" />
+              </div>
+              <!-- Fim item 4 -->
             </div>
-            <!-- Fim Item  1 -->
-
-            <div class="newsletter__wrapper__depo-item">
-              <img src="./assets/markup.png" alt="Imagem de aspas abertas" />
-              <p>
-                Passei o reillon no Recanto, atendimento muito bom, perfeito
-                para férias com a família. Ótima estrutura, pisicinas para todas
-                as idades, funcionários bem treinados e atenciosos. Comida muito
-                saborosa, apartamentos bem equipados. Voltarei sem dúvidas.
-              </p>
-              <img src="./assets/markup.png" alt="Imagem de aspas abertas" />
+            <div class="newsletter__depos__selectors">
+              <span class="selector active-selector" data-index="0"></span>
+              <span class="selector" data-index="1"></span>
+              <span class="selector" data-index="2"></span>
+              <span class="selector" data-index="3"></span>
             </div>
-            <!-- Fim Item  2 -->
-
-            <div class="newsletter__wrapper__depo-item">
-              <img src="./assets/markup.png" alt="Imagem de aspas abertas" />
-              <p>
-                Passei o reillon no Recanto, atendimento muito bom, perfeito
-                para férias com a família. Ótima estrutura, pisicinas para todas
-                as idades, funcionários bem treinados e atenciosos. Comida muito
-                saborosa, apartamentos bem equipados. Voltarei sem dúvidas.
-              </p>
-              <img src="./assets/markup.png" alt="Imagem de aspas abertas" />
-            </div>
-            <!-- Fim Item  3 -->
-
-            <div class="newsletter__wrapper__depo-item">
-              <img src="./assets/markup.png" alt="Imagem de aspas abertas" />
-              <p>
-                Passei o reillon no Recanto, atendimento muito bom, perfeito
-                para férias com a família. Ótima estrutura, pisicinas para todas
-                as idades, funcionários bem treinados e atenciosos. Comida muito
-                saborosa, apartamentos bem equipados. Voltarei sem dúvidas.
-              </p>
-              <img src="./assets/markup.png" alt="Imagem de aspas abertas" />
-            </div>
-            <!-- Fim Item  4 -->
           </div>
-          <!-- Fim depo wrapper item -->
-          <div class="newsletter__wrapper__selector">
-            <span class="selector"></span>
-            <span class="selector"></span>
-            <span class="selector"></span>
-            <span class="selector"></span>
-          </div>
+          <form>
+            <h2>Receba nossas promoções por email</h2>
+            <p>
+              Reservamos os melhores pacotes promocionais para você. Digite seu
+              email abaixo para ficar sempre em dia com nossas promoções.
+            </p>
+            <div class="form-row">
+              <input type="text" placeholder="Deixe aqui seu email" />
+              <button class="formbutton">Enviar</button>
+            </div>
+          </form>
         </div>
         <!-- Fim Wrapper -->
-        <form>
-          <h2>Receba nossas promoções por email</h2>
-          <p>
-            Reservamos os melhores pacotes promocionais para você. Digite seu
-            email abaixo para ficar sempre em dia com nossas promoções.
-          </p>
-          <div class="form-row">
-            <input type="text" placeholder="Deixe aqui seu email" />
-            <button class="formbutton">Enviar</button>
-          </div>
-        </form>
       </div>
     </section>
     <!-- Fim newsletter -->
@@ -309,111 +324,330 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__info">
-            <div class="footer__column">
-                <img
-                  src="./assets/logotipo-topo.png"
-                  alt="Logotipo Recanto Cataratas"
-                />
+          <div class="footer__column">
+            <img
+              src="./assets/logotipo-topo.png"
+              alt="Logotipo Recanto Cataratas"
+            />
+          </div>
+          <!-- Fim primeira coluna -->
+          <div class="footer__column">
+            <address class="footer__column-item">
+              <h3>Localização</h3>
+              <p>Av. Costa e Silva, 3500</p>
+              <p>Foz do Iguaçu / PR - Brasil</p>
+            </address>
+            <address class="footer__column-item">
+              <h3>Contato</h3>
+              <div class="footer__column-item-row">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"
+                  />
+                </svg>
+                <p>
+                  <a href="#" target="_blank">+55 (45) 2102 3000</a> /
+                  <a href="#" target="_blank">+55 (45) 2102 3033</a>
+                </p>
               </div>
-              <!-- Fim primeira coluna -->
-              <div class="footer__column">
-                <address class="footer__column-item">
-                  <h3>Localização</h3>
-                  <p>Av. Costa e Silva, 3500</p>
-                  <p>Foz do Iguaçu / PR - Brasil</p>
-                </address>
-                <address class="footer__column-item">
-                  <h3>Contato</h3>
-                  <div class="footer__column-item-row">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"
-                      />
-                    </svg>
-                    <p>
-                      <a href="#" target="_blank">+55 (45) 2102 3000</a> /
-                      <a href="#" target="_blank">+55 (45) 2102 3033</a>
-                    </p>
-                  </div>
-                  <div class="footer__column-item-row">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"
-                      />
-                    </svg>
-                    <p><a href="#" target="_blank">0800 707 2400</a></p>
-                  </div>
-                  <div class="footer__column-item-row">
-                    <svg
-                      xmlns="http://www.w3.org/2000/svg"
-                      width="24"
-                      height="24"
-                      viewBox="0 0 24 24"
-                    >
-                      <path
-                        d="M0 3v18h24v-18h-24zm22 16l-6.526-6.618-3.445 3.483-3.418-3.525-6.611 6.66 5.051-8-5.051-6 10.029 7.446 9.971-7.446-4.998 6.01 4.998 7.99z"
-                      />
-                    </svg>
-                    <p>
-                      <a href="#" target="_blank"
-                        >contato@recantocataratasresort.com.br</a
-                      >
-                    </p>
-                  </div>
-                </address>
+              <div class="footer__column-item-row">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M20 22.621l-3.521-6.795c-.008.004-1.974.97-2.064 1.011-2.24 1.086-6.799-7.82-4.609-8.994l2.083-1.026-3.493-6.817-2.106 1.039c-7.202 3.755 4.233 25.982 11.6 22.615.121-.055 2.102-1.029 2.11-1.033z"
+                  />
+                </svg>
+                <p><a href="#" target="_blank">0800 707 2400</a></p>
               </div>
-              <!-- Fim segunda coluna -->
-              <div class="footer__column">
-                <div class="footer__column-item">
-                  <h3>Central de Contatos</h3>
-                  <a href="#" target="_blank">Fale com a Diretoria</a>
-                  <a href="#" target="_blank">Fale Conosco</a>
-                </div>
-                <div class="footer__column-item">
-                  <h3>Trabalhe Conosco</h3>
-                  <a href="#" target="_blank">Envie seu currículo</a>
-                </div>
-                <div class="footer__column-item">
-                  <h3>Sala de Imprensa</h3>
-                  <a href="#" target="_blank">Press releases</a>
-                </div>
+              <div class="footer__column-item-row">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    d="M0 3v18h24v-18h-24zm22 16l-6.526-6.618-3.445 3.483-3.418-3.525-6.611 6.66 5.051-8-5.051-6 10.029 7.446 9.971-7.446-4.998 6.01 4.998 7.99z"
+                  />
+                </svg>
+                <p>
+                  <a href="#" target="_blank"
+                    >contato@recantocataratasresort.com.br</a
+                  >
+                </p>
               </div>
-              <!-- Fim terceira coluna -->
-              <div class="footer__column">
-                <div class="footer__column-item">
-                  <h3>Institucional</h3>
-                  <a href="#" target="_blank">O Resort</a>
-                  <a href="#" target="_blank">Galeria de Fotos</a>
-                  <a href="#" target="_blank">Localização</a>
-                  <a href="#" target="_blank">Nossa missão</a>
-                </div>
-                <div class="footer__column-item">
-                  <h3>Redes Sociais</h3>
-                  <a class="redes-link trip" href="#" target="_blank"><svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 812.82 729.6"><title>Tripadvisor_Logo_horizontal-lockup-stack_registered_RGB</title><path d="M346.87,517.5a71.94,71.94,0,1,0-71.93-71.93A71.94,71.94,0,0,0,346.87,517.5Z" transform="translate(-143.89 -143.89)"/><circle cx="608.53" cy="301.68" r="71.94"/><path d="M144.1,445.57c0,112,90.78,202.77,202.77,202.77a202,202,0,0,0,137.81-54.05l65,70.73,65-70.69a202,202,0,0,0,137.77,54c112,0,202.86-90.79,202.86-202.77A202.29,202.29,0,0,0,889.13,295.7l66.35-72.19H808.39a459.49,459.49,0,0,0-517,0H143.89l66.35,72.19A202.28,202.28,0,0,0,144.1,445.57Zm745.55,0A137.23,137.23,0,1,1,752.42,308.34,137.23,137.23,0,0,1,889.65,445.57Zm-340-235.33A393.78,393.78,0,0,1,702,240.7c-86.61,33.14-152.28,110.62-152.28,200.91,0-90.3-65.69-167.79-152.31-200.92A393.7,393.7,0,0,1,549.65,210.24Zm-202.78,98.1A137.23,137.23,0,1,1,209.64,445.57,137.23,137.23,0,0,1,346.87,308.34Z" transform="translate(-143.89 -143.89)"/><path d="M948.42,833.27a8.29,8.29,0,1,0,8.29,8.29A8.3,8.3,0,0,0,948.42,833.27Zm0,15.28a7,7,0,1,1,7-7A7,7,0,0,1,948.42,848.55Z" transform="translate(-143.89 -143.89)"/><path d="M951.11,840.15a2.36,2.36,0,0,0-2.64-2.4h-2.65v7.54h1.3v-2.74h1.41l1.37,2.74h1.41l-1.51-3A2.18,2.18,0,0,0,951.11,840.15Zm-2.7,1.25h-1.29v-2.5h1.29c.87,0,1.4.44,1.4,1.25S949.28,841.4,948.41,841.4Z" transform="translate(-143.89 -143.89)"/><path d="M238.87,777.87V763.59H217v85h21.9V797.61c0-9.23,5.92-13.76,15.15-13.76h12V763.59H255.76C247.75,763.59,240.78,767.77,238.87,777.87Z" transform="translate(-143.89 -143.89)"/><path d="M286.51,730a13.32,13.32,0,1,0,13.23,13.41A13.15,13.15,0,0,0,286.51,730Z" transform="translate(-143.89 -143.89)"/><rect x="131.7" y="619.7" width="21.84" height="84.95"/><path d="M357.57,762.16a42.22,42.22,0,0,0-25.78,8.62v-7.19H310V873.48h21.84V841.36A42.28,42.28,0,0,0,357.57,850a43.91,43.91,0,0,0,0-87.82Zm-1.93,67.76a23.86,23.86,0,1,1,23.86-23.85A23.85,23.85,0,0,1,355.64,829.92Z" transform="translate(-143.89 -143.89)"/><path d="M781.14,798.62l-12.74-3.5c-8.38-2.18-11.65-4.76-11.65-9.19s4.59-7.33,11.16-7.33c6.26,0,11.16,4.1,11.16,9.33v.49H799.2v-.49c0-15.42-12.57-25.77-31.29-25.77-18.54,0-32,10.35-32,24.61,0,11.09,7.36,19.45,20.18,22.92L768.3,813c9.27,2.57,12.71,5.42,12.71,10.52,0,5.38-5,9-12.39,9-7.74,0-12.93-4.89-12.93-12.16v-.49H734.32v.49c0,17.43,14,29.6,34.12,29.6,19.36,0,33.41-11.89,33.41-28.27C801.85,813.69,798.26,803.18,781.14,798.62Z" transform="translate(-143.89 -143.89)"/><path d="M479,770.78a42.22,42.22,0,0,0-25.78-8.62,43.91,43.91,0,0,0,0,87.82A42.28,42.28,0,0,0,479,841.36v7.19h21.84v-85H479Zm0,35.29a23.86,23.86,0,1,1-23.85-23.86A23.85,23.85,0,0,1,479,806.07Z" transform="translate(-143.89 -143.89)"/><path d="M579.68,770.78a42.21,42.21,0,0,0-25.77-8.62,43.91,43.91,0,1,0,0,87.82,42.28,42.28,0,0,0,25.77-8.62v7.19h21.84V733.35H579.68Zm-23.85,59.14a23.86,23.86,0,1,1,23.85-23.85A23.85,23.85,0,0,1,555.83,829.92Z" transform="translate(-143.89 -143.89)"/><rect x="559.06" y="619.7" width="21.84" height="84.95"/><path d="M713.87,730a13.32,13.32,0,1,0,13.23,13.41A13.15,13.15,0,0,0,713.87,730Z" transform="translate(-143.89 -143.89)"/><path d="M852.36,762.16a43.91,43.91,0,1,0,43.91,43.91A43.91,43.91,0,0,0,852.36,762.16Zm0,67.76a23.86,23.86,0,1,1,23.85-23.85A23.85,23.85,0,0,1,852.36,829.92Z" transform="translate(-143.89 -143.89)"/><polygon points="83.79 589.46 0 589.46 0 608.95 31.02 608.95 31.02 704.66 52.78 704.66 52.78 608.95 83.79 608.95 83.79 589.46"/><polygon points="507.55 681.39 488.13 619.7 465.18 619.7 494.32 704.66 520.61 704.66 549.92 619.7 526.98 619.7 507.55 681.39"/><path d="M955.4,783.85V763.59H945.17c-8,0-15,4.18-16.89,14.28V763.59H906.39v85h21.89V797.61c0-9.23,5.92-13.76,15.15-13.76Z" transform="translate(-143.89 -143.89)"/></svg></a>
-                  <a class="redes-link instagram" href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg></a>
-                  <a class="redes-link whatsapp" href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg></a>
-                  <a class="redes-link facebook" href="#" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"/></svg></a>
-                </div>
+            </address>
+          </div>
+          <!-- Fim segunda coluna -->
+          <div class="footer__column">
+            <div class="footer__column-item">
+              <h3>Central de Contatos</h3>
+              <a href="#" target="_blank">Fale com a Diretoria</a>
+              <a href="#" target="_blank">Fale Conosco</a>
+            </div>
+            <div class="footer__column-item">
+              <h3>Trabalhe Conosco</h3>
+              <a href="#" target="_blank">Envie seu currículo</a>
+            </div>
+            <div class="footer__column-item">
+              <h3>Sala de Imprensa</h3>
+              <a href="#" target="_blank">Press releases</a>
+            </div>
+          </div>
+          <!-- Fim terceira coluna -->
+          <div class="footer__column">
+            <div class="footer__column-item">
+              <h3>Institucional</h3>
+              <a href="#" target="_blank">O Resort</a>
+              <a href="#" target="_blank">Galeria de Fotos</a>
+              <a href="#" target="_blank">Localização</a>
+              <a href="#" target="_blank">Nossa missão</a>
+            </div>
+            <div class="footer__column-item">
+              <h3>Redes Sociais</h3>
+              <div class="footer__column-item-row redes">
+                <a class="redes-link trip" href="#" target="_blank"
+                  ><svg
+                    id="Layer_1"
+                    data-name="Layer 1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 812.82 729.6"
+                  >
+                    <title>
+                      Tripadvisor_Logo_horizontal-lockup-stack_registered_RGB
+                    </title>
+                    <path
+                      d="M346.87,517.5a71.94,71.94,0,1,0-71.93-71.93A71.94,71.94,0,0,0,346.87,517.5Z"
+                      transform="translate(-143.89 -143.89)"
+                    />
+                    <circle cx="608.53" cy="301.68" r="71.94" />
+                    <path
+                      d="M144.1,445.57c0,112,90.78,202.77,202.77,202.77a202,202,0,0,0,137.81-54.05l65,70.73,65-70.69a202,202,0,0,0,137.77,54c112,0,202.86-90.79,202.86-202.77A202.29,202.29,0,0,0,889.13,295.7l66.35-72.19H808.39a459.49,459.49,0,0,0-517,0H143.89l66.35,72.19A202.28,202.28,0,0,0,144.1,445.57Zm745.55,0A137.23,137.23,0,1,1,752.42,308.34,137.23,137.23,0,0,1,889.65,445.57Zm-340-235.33A393.78,393.78,0,0,1,702,240.7c-86.61,33.14-152.28,110.62-152.28,200.91,0-90.3-65.69-167.79-152.31-200.92A393.7,393.7,0,0,1,549.65,210.24Zm-202.78,98.1A137.23,137.23,0,1,1,209.64,445.57,137.23,137.23,0,0,1,346.87,308.34Z"
+                      transform="translate(-143.89 -143.89)"
+                    />
+                    <path
+                      d="M948.42,833.27a8.29,8.29,0,1,0,8.29,8.29A8.3,8.3,0,0,0,948.42,833.27Zm0,15.28a7,7,0,1,1,7-7A7,7,0,0,1,948.42,848.55Z"
+                      transform="translate(-143.89 -143.89)"
+                    />
+                    <path
+                      d="M951.11,840.15a2.36,2.36,0,0,0-2.64-2.4h-2.65v7.54h1.3v-2.74h1.41l1.37,2.74h1.41l-1.51-3A2.18,2.18,0,0,0,951.11,840.15Zm-2.7,1.25h-1.29v-2.5h1.29c.87,0,1.4.44,1.4,1.25S949.28,841.4,948.41,841.4Z"
+                      transform="translate(-143.89 -143.89)"
+                    />
+                    <path
+                      d="M238.87,777.87V763.59H217v85h21.9V797.61c0-9.23,5.92-13.76,15.15-13.76h12V763.59H255.76C247.75,763.59,240.78,767.77,238.87,777.87Z"
+                      transform="translate(-143.89 -143.89)"
+                    />
+                    <path
+                      d="M286.51,730a13.32,13.32,0,1,0,13.23,13.41A13.15,13.15,0,0,0,286.51,730Z"
+                      transform="translate(-143.89 -143.89)"
+                    />
+                    <rect x="131.7" y="619.7" width="21.84" height="84.95" />
+                    <path
+                      d="M357.57,762.16a42.22,42.22,0,0,0-25.78,8.62v-7.19H310V873.48h21.84V841.36A42.28,42.28,0,0,0,357.57,850a43.91,43.91,0,0,0,0-87.82Zm-1.93,67.76a23.86,23.86,0,1,1,23.86-23.85A23.85,23.85,0,0,1,355.64,829.92Z"
+                      transform="translate(-143.89 -143.89)"
+                    />
+                    <path
+                      d="M781.14,798.62l-12.74-3.5c-8.38-2.18-11.65-4.76-11.65-9.19s4.59-7.33,11.16-7.33c6.26,0,11.16,4.1,11.16,9.33v.49H799.2v-.49c0-15.42-12.57-25.77-31.29-25.77-18.54,0-32,10.35-32,24.61,0,11.09,7.36,19.45,20.18,22.92L768.3,813c9.27,2.57,12.71,5.42,12.71,10.52,0,5.38-5,9-12.39,9-7.74,0-12.93-4.89-12.93-12.16v-.49H734.32v.49c0,17.43,14,29.6,34.12,29.6,19.36,0,33.41-11.89,33.41-28.27C801.85,813.69,798.26,803.18,781.14,798.62Z"
+                      transform="translate(-143.89 -143.89)"
+                    />
+                    <path
+                      d="M479,770.78a42.22,42.22,0,0,0-25.78-8.62,43.91,43.91,0,0,0,0,87.82A42.28,42.28,0,0,0,479,841.36v7.19h21.84v-85H479Zm0,35.29a23.86,23.86,0,1,1-23.85-23.86A23.85,23.85,0,0,1,479,806.07Z"
+                      transform="translate(-143.89 -143.89)"
+                    />
+                    <path
+                      d="M579.68,770.78a42.21,42.21,0,0,0-25.77-8.62,43.91,43.91,0,1,0,0,87.82,42.28,42.28,0,0,0,25.77-8.62v7.19h21.84V733.35H579.68Zm-23.85,59.14a23.86,23.86,0,1,1,23.85-23.85A23.85,23.85,0,0,1,555.83,829.92Z"
+                      transform="translate(-143.89 -143.89)"
+                    />
+                    <rect x="559.06" y="619.7" width="21.84" height="84.95" />
+                    <path
+                      d="M713.87,730a13.32,13.32,0,1,0,13.23,13.41A13.15,13.15,0,0,0,713.87,730Z"
+                      transform="translate(-143.89 -143.89)"
+                    />
+                    <path
+                      d="M852.36,762.16a43.91,43.91,0,1,0,43.91,43.91A43.91,43.91,0,0,0,852.36,762.16Zm0,67.76a23.86,23.86,0,1,1,23.85-23.85A23.85,23.85,0,0,1,852.36,829.92Z"
+                      transform="translate(-143.89 -143.89)"
+                    />
+                    <polygon
+                      points="83.79 589.46 0 589.46 0 608.95 31.02 608.95 31.02 704.66 52.78 704.66 52.78 608.95 83.79 608.95 83.79 589.46"
+                    />
+                    <polygon
+                      points="507.55 681.39 488.13 619.7 465.18 619.7 494.32 704.66 520.61 704.66 549.92 619.7 526.98 619.7 507.55 681.39"
+                    />
+                    <path
+                      d="M955.4,783.85V763.59H945.17c-8,0-15,4.18-16.89,14.28V763.59H906.39v85h21.89V797.61c0-9.23,5.92-13.76,15.15-13.76Z"
+                      transform="translate(-143.89 -143.89)"
+                    /></svg
+                ></a>
+                <a class="redes-link instagram" href="#" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+                    /></svg
+                ></a>
+                <a class="redes-link whatsapp" href="#" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+                    /></svg
+                ></a>
+                <a class="redes-link facebook" href="#" target="_blank"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
+                    /></svg
+                ></a>
               </div>
-              <!-- Fim quarta coluna -->
+            </div>
+          </div>
+          <!-- Fim quarta coluna -->
         </div>
         <!-- Fim footer__info -->
-        <div class="footer__direitos">
-            <p>Recanto Cataratas - Thermas Resort & Convention. &copy;2021. Todos os direitos reservados.</p>
-            <p>Desenvolvido por <a href="https://github.com/filipexxborba" target="_blank">Filipe Borba</a></p>
-        </div>
-        <!-- Fim direitos -->
       </div>
+      <div class="footer__direitos">
+        <p>
+          Recanto Cataratas - Thermas Resort & Convention. &copy;2021. Todos os
+          direitos reservados.
+        </p>
+        <p>
+          Desenvolvido por
+          <a href="https://github.com/filipexxborba" target="_blank"
+            >Filipe Borba</a
+          >
+        </p>
+      </div>
+      <!-- Fim direitos -->
     </footer>
+
+    <!-- aside -->
+    <aside class="aside">
+      <a class="redes-link trip" href="#" target="_blank"
+        ><svg
+          id="Layer_1"
+          data-name="Layer 1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 812.82 729.6"
+        >
+          <title>Tripadvisor_Logo_horizontal-lockup-stack_registered_RGB</title>
+          <path
+            d="M346.87,517.5a71.94,71.94,0,1,0-71.93-71.93A71.94,71.94,0,0,0,346.87,517.5Z"
+            transform="translate(-143.89 -143.89)"
+          />
+          <circle cx="608.53" cy="301.68" r="71.94" />
+          <path
+            d="M144.1,445.57c0,112,90.78,202.77,202.77,202.77a202,202,0,0,0,137.81-54.05l65,70.73,65-70.69a202,202,0,0,0,137.77,54c112,0,202.86-90.79,202.86-202.77A202.29,202.29,0,0,0,889.13,295.7l66.35-72.19H808.39a459.49,459.49,0,0,0-517,0H143.89l66.35,72.19A202.28,202.28,0,0,0,144.1,445.57Zm745.55,0A137.23,137.23,0,1,1,752.42,308.34,137.23,137.23,0,0,1,889.65,445.57Zm-340-235.33A393.78,393.78,0,0,1,702,240.7c-86.61,33.14-152.28,110.62-152.28,200.91,0-90.3-65.69-167.79-152.31-200.92A393.7,393.7,0,0,1,549.65,210.24Zm-202.78,98.1A137.23,137.23,0,1,1,209.64,445.57,137.23,137.23,0,0,1,346.87,308.34Z"
+            transform="translate(-143.89 -143.89)"
+          />
+          <path
+            d="M948.42,833.27a8.29,8.29,0,1,0,8.29,8.29A8.3,8.3,0,0,0,948.42,833.27Zm0,15.28a7,7,0,1,1,7-7A7,7,0,0,1,948.42,848.55Z"
+            transform="translate(-143.89 -143.89)"
+          />
+          <path
+            d="M951.11,840.15a2.36,2.36,0,0,0-2.64-2.4h-2.65v7.54h1.3v-2.74h1.41l1.37,2.74h1.41l-1.51-3A2.18,2.18,0,0,0,951.11,840.15Zm-2.7,1.25h-1.29v-2.5h1.29c.87,0,1.4.44,1.4,1.25S949.28,841.4,948.41,841.4Z"
+            transform="translate(-143.89 -143.89)"
+          />
+          <path
+            d="M238.87,777.87V763.59H217v85h21.9V797.61c0-9.23,5.92-13.76,15.15-13.76h12V763.59H255.76C247.75,763.59,240.78,767.77,238.87,777.87Z"
+            transform="translate(-143.89 -143.89)"
+          />
+          <path
+            d="M286.51,730a13.32,13.32,0,1,0,13.23,13.41A13.15,13.15,0,0,0,286.51,730Z"
+            transform="translate(-143.89 -143.89)"
+          />
+          <rect x="131.7" y="619.7" width="21.84" height="84.95" />
+          <path
+            d="M357.57,762.16a42.22,42.22,0,0,0-25.78,8.62v-7.19H310V873.48h21.84V841.36A42.28,42.28,0,0,0,357.57,850a43.91,43.91,0,0,0,0-87.82Zm-1.93,67.76a23.86,23.86,0,1,1,23.86-23.85A23.85,23.85,0,0,1,355.64,829.92Z"
+            transform="translate(-143.89 -143.89)"
+          />
+          <path
+            d="M781.14,798.62l-12.74-3.5c-8.38-2.18-11.65-4.76-11.65-9.19s4.59-7.33,11.16-7.33c6.26,0,11.16,4.1,11.16,9.33v.49H799.2v-.49c0-15.42-12.57-25.77-31.29-25.77-18.54,0-32,10.35-32,24.61,0,11.09,7.36,19.45,20.18,22.92L768.3,813c9.27,2.57,12.71,5.42,12.71,10.52,0,5.38-5,9-12.39,9-7.74,0-12.93-4.89-12.93-12.16v-.49H734.32v.49c0,17.43,14,29.6,34.12,29.6,19.36,0,33.41-11.89,33.41-28.27C801.85,813.69,798.26,803.18,781.14,798.62Z"
+            transform="translate(-143.89 -143.89)"
+          />
+          <path
+            d="M479,770.78a42.22,42.22,0,0,0-25.78-8.62,43.91,43.91,0,0,0,0,87.82A42.28,42.28,0,0,0,479,841.36v7.19h21.84v-85H479Zm0,35.29a23.86,23.86,0,1,1-23.85-23.86A23.85,23.85,0,0,1,479,806.07Z"
+            transform="translate(-143.89 -143.89)"
+          />
+          <path
+            d="M579.68,770.78a42.21,42.21,0,0,0-25.77-8.62,43.91,43.91,0,1,0,0,87.82,42.28,42.28,0,0,0,25.77-8.62v7.19h21.84V733.35H579.68Zm-23.85,59.14a23.86,23.86,0,1,1,23.85-23.85A23.85,23.85,0,0,1,555.83,829.92Z"
+            transform="translate(-143.89 -143.89)"
+          />
+          <rect x="559.06" y="619.7" width="21.84" height="84.95" />
+          <path
+            d="M713.87,730a13.32,13.32,0,1,0,13.23,13.41A13.15,13.15,0,0,0,713.87,730Z"
+            transform="translate(-143.89 -143.89)"
+          />
+          <path
+            d="M852.36,762.16a43.91,43.91,0,1,0,43.91,43.91A43.91,43.91,0,0,0,852.36,762.16Zm0,67.76a23.86,23.86,0,1,1,23.85-23.85A23.85,23.85,0,0,1,852.36,829.92Z"
+            transform="translate(-143.89 -143.89)"
+          />
+          <polygon
+            points="83.79 589.46 0 589.46 0 608.95 31.02 608.95 31.02 704.66 52.78 704.66 52.78 608.95 83.79 608.95 83.79 589.46"
+          />
+          <polygon
+            points="507.55 681.39 488.13 619.7 465.18 619.7 494.32 704.66 520.61 704.66 549.92 619.7 526.98 619.7 507.55 681.39"
+          />
+          <path
+            d="M955.4,783.85V763.59H945.17c-8,0-15,4.18-16.89,14.28V763.59H906.39v85h21.89V797.61c0-9.23,5.92-13.76,15.15-13.76Z"
+            transform="translate(-143.89 -143.89)"
+          /></svg
+      ></a>
+      <a class="redes-link instagram" href="#" target="_blank"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"
+          /></svg
+      ></a>
+      <a class="redes-link whatsapp" href="#" target="_blank"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"
+          /></svg
+      ></a>
+      <a class="redes-link facebook" href="#" target="_blank"
+        ><svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+        >
+          <path
+            d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm3 8h-1.35c-.538 0-.65.221-.65.778v1.222h2l-.209 2h-1.791v7h-3v-7h-2v-2h2v-2.308c0-1.769.931-2.692 3.029-2.692h1.971v3z"
+          /></svg
+      ></a>
+    </aside>
+    <script src="./js/index.js"></script>
   </body>
 </html>

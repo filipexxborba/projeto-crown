@@ -1,0 +1,135 @@
+.newsletter {
+  background: url("../../assets/fachada.jpg") center no-repeat;
+  position: relative;
+  z-index: 3;
+  padding: rem(100) 0;
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: rem(0) rem(200);
+  }
+
+  &__depos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    &__items {
+      &-item {
+        background: rgb(73, 73, 73);
+        backdrop-filter: blur(30px);
+        opacity: 0.71;
+        padding: rem(18);
+        align-items: flex-start;
+        position: relative;
+        display: none;
+        opacity: 0;
+        transform: translateX(-10px);
+        p {
+          padding: rem(20);
+          max-width: 30ch;
+          color: #fff;
+          font-weight: 300;
+          font-size: em(16);
+        }
+
+        img {
+          &:nth-of-type(even) {
+            transform: rotate(180deg);
+            align-self: flex-end;
+          }
+        }
+      }
+    }
+
+    &__selectors {
+      margin: rem(15) 0;
+      .selector {
+        display: inline-block;
+        width: rem(15);
+        height: rem(15);
+        background: transparent;
+        border: 1px solid #707070;
+        cursor: pointer;
+        transition: all .1s ease-in;
+
+        &:hover{
+            background: #707070;
+        }
+      }
+    }
+  }
+}
+
+.active-depo {
+  display: flex;
+  animation: showDepo forwards 0.3s ease-in;
+}
+
+@keyframes showDepo {
+  to {
+    opacity: 0.71;
+    transform: translateX(0px);
+  }
+}
+
+.active-selector {
+  background: #fff !important;
+}
+
+.darken-news {
+  width: 100%;
+  height: 100%;
+  background: #000;
+  mix-blend-mode: darken;
+  opacity: 0.64;
+  display: block;
+  position: absolute;
+  top: 0;
+  z-index: -1;
+}
+
+form {
+  h2 {
+    color: #fff;
+    font-size: em(36);
+    font-style: italic;
+    margin-bottom: rem(15);
+  }
+  p {
+    font-size: em(18);
+    color: #b8b8b8;
+    font-weight: 300;
+    max-width: 47ch;
+    margin-bottom: rem(50);
+  }
+
+  input {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #4eb4db;
+    padding: rem(16);
+    color: #4eb4db;
+    min-width: rem(540);
+    margin-right: rem(20);
+
+    &::placeholder {
+      color: #4eb4db;
+      opacity: 0.82;
+    }
+
+    &:focus {
+      outline: 1px solid #4eb4db;
+    }
+  }
+  button {
+    background: none;
+    border: 2px solid #4eb4db;
+    padding: rem(18) rem(30);
+    font-size: em(18);
+    font-weight: bold;
+    color: #4eb4db;
+  }
+}
