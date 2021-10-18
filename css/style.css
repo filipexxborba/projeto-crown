@@ -117,7 +117,8 @@ ul {
 }
 
 .image-wrapper {
-  background: url("../../assets/header-image.jpg") center no-repeat;
+  background: url("https://i.ibb.co/BcnzSPR/header-image.jpg") center no-repeat;
+  background-size: cover;
   -o-object-fit: contain;
      object-fit: contain;
   position: relative;
@@ -194,9 +195,8 @@ ul {
 }
 
 .image-wrapper-cta {
-  background: url("../../assets/pexels-vlad-bagacian-1061623.jpg");
-  -o-object-fit: contain;
-     object-fit: contain;
+  background: url("https://i.ibb.co/f9WTztY/pexels-vlad-bagacian-1061623.jpg") no-repeat center;
+  background-size: cover;
   position: relative;
   z-index: 1;
   padding: 7.8125rem 0;
@@ -326,7 +326,8 @@ ul {
 }
 
 .newsletter {
-  background: url("../../assets/fachada.jpg") center no-repeat;
+  background: url("https://i.ibb.co/DMYGSF5/fachada.jpg") no-repeat center;
+  background-size: cover;
   position: relative;
   z-index: 3;
   padding: 6.25rem 0;
@@ -510,7 +511,7 @@ form button {
 }
 
 .footer {
-  background-image: url("../../assets/footer-bg.png");
+  background-image: url("https://i.ibb.co/cvJTbxh/footer-bg.png");
 }
 
 .footer svg {
