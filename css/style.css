@@ -117,6 +117,8 @@ ul {
 }
 
 .image-wrapper {
+  background: url("https://github.com/filipexxborba/projeto-crown/blob/main/assets/header-image.jpg?raw=true") center no-repeat;
+  background-attachment: fixed;
   background-size: cover;
   -o-object-fit: contain;
      object-fit: contain;
@@ -194,6 +196,7 @@ ul {
 }
 
 .image-wrapper-cta {
+  background: url("https://github.com/filipexxborba/projeto-crown/blob/main/assets/pexels-vlad-bagacian-1061623.jpg?raw=true") no-repeat center;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -324,7 +327,8 @@ ul {
 }
 
 .newsletter {
-  background-size: cover;
+  background: url("https://github.com/filipexxborba/projeto-crown/blob/main/assets/fachada.jpg?raw=true") no-repeat center;
+  background-attachment: fixed;
   position: relative;
   z-index: 3;
   padding: 6.25rem 0;
@@ -505,6 +509,10 @@ form button {
   font-size: 1.125em;
   font-weight: bold;
   color: #4eb4db;
+}
+
+.footer {
+  background-image: url("https://github.com/filipexxborba/projeto-crown/blob/main/assets/footer-bg.png?raw=true");
 }
 
 .footer svg {
