@@ -7,7 +7,7 @@
 }
 
 .container {
-  max-width: 106.25rem;
+  max-width: 120rem;
   margin: 0 auto;
 }
 
@@ -510,7 +510,7 @@ form button {
 }
 
 .footer {
-  background: url("../../assets/footer-bg.png");
+  background-image: url("../../assets/footer-bg.png");
 }
 
 .footer svg {
