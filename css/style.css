@@ -117,7 +117,6 @@ ul {
 }
 
 .image-wrapper {
-  background: url("../../assets/header-image.jpg") center no-repeat;
   background-size: cover;
   -o-object-fit: contain;
      object-fit: contain;
@@ -195,7 +194,6 @@ ul {
 }
 
 .image-wrapper-cta {
-  background: url("../../assets/pexels-vlad-bagacian-1061623.jpg") no-repeat center;
   background-size: cover;
   position: relative;
   z-index: 1;
@@ -326,7 +324,6 @@ ul {
 }
 
 .newsletter {
-  background: url("../../assets/fachada.jpg") no-repeat center;
   background-size: cover;
   position: relative;
   z-index: 3;
@@ -508,10 +505,6 @@ form button {
   font-size: 1.125em;
   font-weight: bold;
   color: #4eb4db;
-}
-
-.footer {
-  background-image: url("../../assets/footer-bg.png");
 }
 
 .footer svg {
